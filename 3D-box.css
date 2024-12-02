@@ -15,12 +15,14 @@ body {
 
 h1 {
     margin: 125px 0px;
+    padding: 0 50px;
     color: #fff;
+    text-align: center;
 
 }
 
 .container {
-    margin: 125px 0px;
+    margin: 125px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +32,8 @@ h1 {
 .cube {
     transform-style: preserve-3d;
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     transform: rotateX(30deg) rotateY(30deg);
     animation: rotateCube 5s infinite cubic-bezier(0.68, -0.6, 0.32, 1.6);
     will-change: transform; 
@@ -39,42 +41,43 @@ h1 {
 
 .side {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(64, 64, 255, 0.75); 
     border: 1px solid #fff;
+    border-radius: 75px;
 }
 
 .frontside {
     /* background-color: rgb(64, 64, 255, 0.5); */
-    transform: translateZ(125px);
+    transform: translateZ(105px);
     /* animation: spin 5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     animation-iteration-count: infinite; */
 }
 
 .back {
     /* background-color: rgb(64, 64, 255, 0.5); */
-    transform: rotateY(180deg) translateZ(125px); 
+    transform: rotateY(180deg) translateZ(105px); 
 }
 
 .left {
     /* background-color: rgb(64, 64, 255, 0.5); */
-    transform: rotateY(-90deg) translateZ(125px); 
+    transform: rotateY(-90deg) translateZ(105px); 
 }
 
 .right {
     /* background-color: rgb(64, 64, 255, 0.5); */
-    transform: rotateY(90deg) translateZ(125px);
+    transform: rotateY(90deg) translateZ(105px);
 }
 
 .top {
     /* background-color: rgb(64, 64, 255, 0.5); */
-    transform: rotateX(90deg) translateZ(125px); 
+    transform: rotateX(90deg) translateZ(105px); 
 }
 
 .bottom {
     /* background-color: rgb(64, 64, 255, 0.5); */
-    transform: rotateX(-90deg) translateZ(125px);
+    transform: rotateX(-90deg) translateZ(105px);
 }
 
 
